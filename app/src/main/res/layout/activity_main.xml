@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="60dp"
+    android:layout_marginRight="16dp">
+
+
+    <TextView android:id="@+id/txtMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fffafff4"/>
+
+    <LinearLayout
+        android:id="@+id/tabla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true">
+
+        <ImageButton
+            android:id="@+id/Bfeliz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton103"
+
+            android:layout_weight="1"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/Benamorado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/boton107"
+
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/Btriste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/boton105"
+
+            android:scaleType="fitCenter"/>
+
+
+        <ImageButton
+            android:id="@+id/Bbravo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/boton109"
+
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+        <TextView android:id="@+id/txtFrase"
+            android:layout_below="@id/tabla"
+            android:layout_columnSpan="2"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ff020501"
+            android:background="@drawable/intentotres"/>
+
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_below="@id/txtFrase"
+    android:src="@drawable/moody"/>
+
+</RelativeLayout>
